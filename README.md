@@ -2,7 +2,7 @@
 [![](https://jitpack.io/v/thavelka/HFRecyclerViewAdapter.svg)](https://jitpack.io/#thavelka/HFRecyclerViewAdapter)
 
 
-A RecyclerView Adapter with support for dynamically adding an arbitrary number of header and footer views above and below the list content. This allows you to easily add search bars, filters, refresh buttons, loading indicators, etc. without fussing with item types and ViewHolders in the adapter.
+A RecyclerView Adapter with support for dynamically adding an arbitrary number of header and footer views above and below the list content. This allows you to easily add search bars, filters, refresh buttons, loading indicators, etc. that scroll with the list content without fussing with item types and ViewHolders in the adapter.
 
 ![In use](/sample/sample.gif)
 
