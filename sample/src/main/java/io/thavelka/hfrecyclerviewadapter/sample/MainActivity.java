@@ -43,9 +43,12 @@ public class MainActivity extends AppCompatActivity {
         adapter.addHeaderView(header1);
         adapter.addHeaderView(header2);
 
-        // Add footer and set as empty view
-        View emptyView = getLayoutInflater().inflate(R.layout.footer_empty, recyclerView, false);
-        adapter.addFooterView(emptyView);
+        // Add footer
+        View footerView = getLayoutInflater().inflate(R.layout.footer_loading, recyclerView, false);
+        adapter.addFooterView(footerView);
+
+        // Set empty view
+        View emptyView = findViewById(R.id.text_empty);
         adapter.setEmptyView(emptyView);
     }
 }
