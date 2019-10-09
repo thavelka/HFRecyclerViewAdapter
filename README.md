@@ -1,10 +1,32 @@
 # HFRecyclerViewAdapter
+[![](https://jitpack.io/v/thavelka/HFRecyclerViewAdapter.svg)](https://jitpack.io/#thavelka/HFRecyclerViewAdapter)
+
 
 A RecyclerView Adapter with support for dynamically adding an arbitrary number of header and footer views above and below the list content. This allows you to easily add search bars, filters, refresh buttons, loading indicators, etc. without fussing with item types and ViewHolders in the adapter.
 
 ![In use](/sample/sample.gif)
 
-## To use
+## Gradle dependency
+HFRecyclerViewAdapter is a single file that can can be copied into your project and modified freely, but if you just want to use it as-is, the library is available as a gradle dependency on JitPack.
+
+In your root project build.gradle file, add the JitPack repository to the bottom of your repository list.
+```
+allprojects {
+ repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+ }
+}
+```
+
+In your app module build.gradle file, add the HFRecyclerViewAdapter dependency.
+```
+dependencies {
+    implementation 'com.github.thavelka:HFRecyclerViewAdapter:1.0.0'
+}
+```
+
+## Usage
 When creating your adapter class, extend HFRecyclerViewAdapter instead of RecyclerView.Adapter and implement the required abstract methods `onCreateItemViewHolder`, `onBindItemViewHolder`, and `getCount`. Use these methods to configure and display your regular list items. 
 
 Once the adapter has been created, use `.addHeader(View)` and `.addFooter(View)` on the adapter to add views above and below the list content.
