@@ -2,7 +2,7 @@
 
 A RecyclerView Adapter with support for dynamically adding an arbitrary number of header and footer views above and below the list content. This allows you to easily add search bars, filters, refresh buttons, loading indicators, etc. without fussing with item types and ViewHolders in the adapter.
 
-![In use](https://i.imgur.com/tBI6ck3.gif)
+![In use](/sample/sample.gif)
 
 ### To use
 When creating your adapter class, extend HFRecyclerViewAdapter instead of RecyclerView.Adapter and implement the required abstract methods `onCreateItemViewHolder`, `onBindItemViewHolder`, and `getCount`. Use these methods to configure and display your regular list items. 
