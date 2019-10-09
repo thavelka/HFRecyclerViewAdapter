@@ -27,6 +27,8 @@ dependencies {
 ```
 
 ## Usage
+See the attached sample project for an implementation of HFRecyclerViewAdapter.
+
 When creating your adapter class, extend HFRecyclerViewAdapter instead of RecyclerView.Adapter and implement the required abstract methods `onCreateItemViewHolder`, `onBindItemViewHolder`, and `getCount`. Use these methods to configure and display your regular list items. 
 
 Once the adapter has been created, use `.addHeader(View)` and `.addFooter(View)` on the adapter to add views above and below the list content.
@@ -46,7 +48,7 @@ View footerView = getLayoutInflater().inflate(R.layout.footer_loading, recyclerV
 adapter.addFooterView(footerView);
 ```
 
-HFRecyclerViewAdapter can also automatically manage an empty view. Designate a view with `.setEmptyView(View)` and HFRecyclerView will display the view when the main list content is empty and hide the view when list content is present. This is based on your regular list items, and the presence of headers and footers will not affect the item count. The empty may be one of the header or footer views, but it does not have to be one. 
+HFRecyclerViewAdapter can also automatically manage an empty view. Designate a view with `.setEmptyView(View)` and HFRecyclerView will display the view when the main list content is empty and hide the view when list content is present. This is based on your regular list items, and the presence of headers and footers will not affect the item count. The empty view can be one of the header or footer views, but it does not have to be one. 
 
 ```
 // Set empty view
